@@ -9,7 +9,8 @@
 		"astro": "astro",
 		"deploy": "astro build && wrangler pages deploy",
 		"cf-typegen": "wrangler types",
-		"format": "bunx prettier . --write"
+		"format": "prettier --write .",
+		"lint": "eslint ."
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.4",
@@ -18,18 +19,19 @@
 		"@astrojs/rss": "^4.0.9",
 		"@astrojs/sitemap": "^3.2.1",
 		"@astrojs/tailwind": "^5.1.2",
-		"@typescript-eslint/parser": "^8.16.0",
 		"astro": "^4.16.16",
-		"eslint": "^9.16.0",
-		"eslint-plugin-astro": "^1.3.1",
-		"eslint-plugin-jsx-a11y": "^6.10.2",
-		"prettier": "^3.4.1",
-		"prettier-plugin-astro": "^0.14.1",
 		"tailwindcss": "^3.4.15",
 		"typescript": "^5.7.2"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20241127.0",
+		"@typescript-eslint/parser": "^8.16.0",
+		"eslint": "^9.16.0",
+		"eslint-plugin-astro": "^1.3.1",
+		"eslint-plugin-jsx-a11y": "^6.10.2",
+		"prettier": "^3.4.1",
+		"prettier-plugin-astro": "^0.14.1",
+		"prettier-plugin-tailwindcss": "^0.6.9",
 		"wrangler": "^3.91.0"
 	}
 }
