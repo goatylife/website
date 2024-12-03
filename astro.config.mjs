@@ -10,7 +10,7 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
 	site: "https://example.com",
 	integrations: [embeds(), mdx(), sitemap(), tailwind()],
-	output: "hybrid",
+	output: "static",
 	adapter: cloudflare({
 		platformProxy: {
 			enabled: true,
