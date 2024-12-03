@@ -11,7 +11,7 @@ baseUrl.searchParams.set("omit_script", "true");
 
 const post = await fetch(baseUrl.toString())
 	.then<{ html: string }>((res) => res.json())
-	.catch((err) => null);
+	.catch((err) => console.error(err));
 ---
 
 {
